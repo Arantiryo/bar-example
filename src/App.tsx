@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -52,5 +52,21 @@ export const data = {
 };
 
 export function App() {
-  return <Bar options={options} data={data} />;
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <Bar options={options} data={data} />
+      <button
+        style={{
+          position: 'absolute',
+          top: '200px',
+          left: '500px',
+        }}
+        onClick={() => setCount((c) => c + 1)}
+      >
+        Button {count}
+      </button>
+    </>
+  );
 }
