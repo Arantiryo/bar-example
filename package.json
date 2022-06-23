@@ -11,6 +11,7 @@
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "chart.js": "^3.8.0",
+    "chartjs-plugin-dragdata": "^2.2.4",
     "faker": "^5.5.3",
     "react": "^18.2.0",
     "react-chartjs-2": "^4.2.0",
